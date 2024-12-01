@@ -96,16 +96,16 @@
             bindings = <
         // ╭----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------╮
         // | BT_CLR   | BT 1     | BT 2     | BT 3     | BT 4     | BT 5     | NONE     | NONE     | NONE     | NONE     | NONE     | LOCK     |
-            &bt BT_CLR  &bt BT0    &bt BT1    &bt BT2    &bt BT3    &bt BT4     &none      &none      &none      &none      &none     &kp LOCK
+             &bt BT_CLR &bt BT0    &bt BT1    &bt BT2    &bt BT3    &bt BT4    &none      &none      &none      &none      &none      &kp LOCK
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
         // | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | QWRTY    | CLMK     | DVRK     | WORK     | NONE     |
-              &none      &none      &none      &none      &none      &none      &none    &to QWRTY   &to CLMK   &to DVRK   &to WORK    &none
+             &none      &none      &none      &none      &none      &none      &none      &to QWRTY  &none      &none      &none      &none
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
         // | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | SCRNF    | SCRNP    | SCRNFC   | SCRNPC   |
             &sys_reset   &none      &none      &none      &none      &none      &none      &none    &kp SCRNF  &kp SCRNP  &kp SCRNFC &kp SCRNPC
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
         // | NONE     | NONE     | NONE     | NONE     | TRANS    | NONE     | NONE     | TRANS    | NONE     | NONE     | NONE     | NONE     |
-            &bootloader  &none      &none      &none      &trans     &none      &none      &trans     &none      &none      &none      &none
+            &bootloader &none      &none      &none      &trans     &none      &none      &trans     &none      &none      &none      &none
         // ╰----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------╯
             >;
         };
