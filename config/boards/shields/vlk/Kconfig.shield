@@ -1,2 +1,4 @@
+## The Kconfig.shield file defines the shield name used to build your keyboard.
+# No whitespace after the comma or in your keyboard name!
 config SHIELD_VLK
-    def_bool $(shields_list_contains, vlk)
+    def_bool $(shields_list_contains,vlk)
