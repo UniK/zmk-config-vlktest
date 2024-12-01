@@ -42,7 +42,7 @@
             bindings = <
         // ╭----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------╮
         // | TAB      |  Q       |  W       |  E       |  R       |  T       |  Y       |  U       |  I       |  O       |  P       |  BSPC    |
-             &kp TAB     &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P      &BSPC
+             &kp TAB     &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
         // | CTRL     |  A       |  S       |  D       |  F       |  G       |  H       |  J       |  K       |  L       |  ;       |  '       |
              &kp LCTRL   &kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT   
@@ -68,8 +68,8 @@
         // | TRANS    | F7       | F8       | F9       | F10      | F11      | F12      | NONE     | NONE     | NONE     | NONE     | TRANS    |
               &trans     &kp F7     &kp F8     &kp F9    &kp F10    &kp F11    &kp F12     &none      &none      &none      &none      &trans   
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
-        // | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | HOME     | PG DN    | PG UP    | END      |
-             &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END   
+        // | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | HOME     | TRANS    | TRANS    | TRANS    |
+             &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans   
         // ╰----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------╯
             >;
         };
@@ -78,16 +78,16 @@
             bindings = <
         // ╭----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------┬----------╮
         // |  `       |  1       |  2       |  3       |  4       |  5       |  6       |  7       |  8       |  9       |  0       | TRANS    |
-            &kp GRAVE    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans   
+            &kp GRAVE    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &trans   
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
         // | DEL      | BRI_UP   | BRI_DN   | EXPO     | DND      | MUTE     | NONE     |  -       |  =       |  [       |  ]       |  \       |
              &kp DEL    &kp BRID   &kp BRIU   &kp EXPO   &kp DND    &kp MUTE   &none      &kp MINUS  &kp EQUAL   &kp LBKT   &kp RBKT   &kp BSLH  
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
         // | TRANS    | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | TRANS    | TRANS    | TRANS    | TRANS    |
-              &trans     &none      &none      &none      &none      &none      &none      &none      &trans     &trans     &trans     &trans   
+             &trans     &none      &none      &none      &none      &none      &none      &none      &trans     &trans     &trans     &trans   
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
-        // | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | NEXT     | VOL_DN   | VOL_UP   | PLAY     |
-              &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans   &kp C_NEXT &kp CVOLD  &kp CVOLU  &kp C_PLAY_PAUSE 
+        // | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS    | TRANS     | TRANS   | TRANS    | TRANS    |
+             &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans 
         // ╰----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------┴----------╯
             >;
         };
@@ -102,7 +102,7 @@
              &none      &none      &none      &none      &none      &none      &none      &to QWRTY  &none      &none      &none      &none
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
         // | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | NONE     | SCRNF    | SCRNP    | SCRNFC   | SCRNPC   |
-            &sys_reset   &none      &none      &none      &none      &none      &none      &none    &kp SCRNF  &kp SCRNP  &kp SCRNFC &kp SCRNPC
+             &sys_reset &none      &none      &none      &none      &none      &none      &none      &kp SCRNF  &kp SCRNP  &kp SCRNFC &kp SCRNPC
         // ├----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┼----------┤
         // | NONE     | NONE     | NONE     | NONE     | TRANS    | NONE     | NONE     | TRANS    | NONE     | NONE     | NONE     | NONE     |
             &bootloader &none      &none      &none      &trans     &none      &none      &trans     &none      &none      &none      &none
