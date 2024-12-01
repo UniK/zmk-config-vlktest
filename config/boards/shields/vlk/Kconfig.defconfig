@@ -1,0 +1,6 @@
+if SHIELD_VLK
+
+config ZMK_KEYBOARD_NAME
+    default "VLK Keeb"
+
+endif
