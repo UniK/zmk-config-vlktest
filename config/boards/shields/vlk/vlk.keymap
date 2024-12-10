@@ -50,8 +50,8 @@
         //  │ SHIFT    │  Z       │  X       │  C       │  V       │  B       │  N       │  M       │  ,       │  .       │  /       │ ENTER    │
              &kp LSHFT   &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RET   
         //  ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //  │ NONE     │ NONE     │ NONE     │ ALT      │ GUI      │ ESC      │ SPACE    │ RAISE    │ LEFT     │ NONE     │ NONE     │ NONE     │
-             &none      &none      &none      &kp LALT   &kp LGUI   &kp ESC    &kp SPACE  &mo RAISE  &mo LOWER  &none      &none      &none  
+        //  │ ----     │ ----     │ ----     │ ALT      │ GUI      │ ESC      │ L1/SPACE │ L2       │ L3       │ ----     │ ----     │ ----     │
+              &none      &none      &none      &kp LALT   &kp LGUI   &kp ESC   &lt 1 SPACE &mo RAISE  &mo RAISE  &none      &none      &none  
         //  ╰──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────╯
             >;
         };
@@ -59,17 +59,17 @@
         lower_layer {
             bindings = <
         //  ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-        //  │  ~       │  !       │  @       │  #       │  $       │  %       │  ^       │  &       │  *       │  (       │  )       │ TRANS    │
-             &kp TILDE   &kp EXCL    &kp AT    &kp HASH   &kp DLLR  &kp PRCNT  &kp CARET   &kp AMPS  &kp ASTRK   &kp LPAR   &kp RPAR    &trans   
+        //  │  ~       │  1       │  2       │  3       │  4       │  5       │  6       │  7       │  8       │  9       │  0       │ TRANS    │
+             &kp TILDE    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans   
         //  ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //  │ DEL      │ F1       │ F2       │ F3       │ F4       │ F5       │ F6       │  _       │  +       │  {       │  }       │  │       │
-              &kp DEL     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6   &kp UNDER   &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE  
+        //  │  DEL     │  F1      │  F2      │  F3      │  F4      │  F5      │  F6      │  LEFT    │  DOWN    │  UP      │  RIGHT   │  │       │
+               &kp DEL    &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT   &kp PIPE  
         //  ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //  │ TRANS    │ F7       │ F8       │ F9       │ F10      │ F11      │ F12      │ NONE     │ NONE     │ NONE     │ NONE     │ TRANS    │
               &trans     &kp F7     &kp F8     &kp F9    &kp F10    &kp F11    &kp F12     &none      &none      &none      &none      &trans   
         //  ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //  │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ HOME     │ TRANS    │ TRANS    │ TRANS    │
-             &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans   
+        //  │ ----     │ ----     │ ----     │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │
+              &none      &none      &none      &trans     &trans     &trans     &trans     &trans     &trans     &none      &none      &none   
         //  ╰──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────╯
             >;
         };
@@ -77,8 +77,8 @@
         raise_layer {
             bindings = <
         //  ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-        //  │  `       │  1       │  2       │  3       │  4       │  5       │  6       │  7       │  8       │  9       │  0       │ TRANS    │
-             &kp GRAVE    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &trans   
+        //  │  `       │  !       │  @       │  #       │  $       │  %       │  ^       │  &       │  *       │  (       │  )       │ TRANS    │
+             &kp GRAVE    &kp EXCL    &kp AT    &kp HASH   &kp DLLR  &kp PRCNT  &kp CARET   &kp AMPS  &kp ASTRK   &kp LPAR   &kp RPAR  &trans   
         //  ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //  │ DEL      │ BRI_UP   │ BRI_DN   │ EXPO     │ DND      │ MUTE     │ NONE     │  -       │  =       │  [       │  ]       │  \       │
               &kp DEL    &kp BRID   &kp BRIU   &kp EXPO   &kp DND    &kp MUTE   &none      &kp MINUS  &kp EQUAL   &kp LBKT   &kp RBKT   &kp BSLH  
@@ -86,8 +86,8 @@
         //  │ TRANS    │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ TRANS    │ TRANS    │ TRANS    │ TRANS    │
               &trans     &none      &none      &none      &none      &none      &none      &none      &trans     &trans     &trans     &trans   
         //  ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //  │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS     │ TRANS   │ TRANS    │ TRANS    │
-              &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans 
+        //  │ ----     │ ----     │ ----     │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ TRANS    │ ----     │ ----     │ ----     │
+              &none      &none      &none      &trans     &trans     &trans     &trans     &trans     &trans     &none      &none      &none 
         //  ╰──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────╯
             >;
         };
@@ -99,13 +99,13 @@
               &bt BT_CLR &bt BT0    &bt BT1    &bt BT2    &bt BT3    &bt BT4    &none      &none      &none      &none      &none      &kp LOCK
         //  ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //  │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ QWRTY    │ CLMK     │ DVRK     │ WORK     │ NONE     │
-              &none      &none      &none      &none      &none      &none      &none      &to QWRTY  &none      &none      &none      &none
+             &bootloader &none      &none      &none      &none      &none      &none      &to QWRTY  &none      &none      &none      &none
         //  ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
         //  │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ NONE     │ SCRNF    │ SCRNP    │ SCRNFC   │ SCRNPC   │
               &sys_reset &none      &none      &none      &none      &none      &none      &none      &kp SCRNF  &kp SCRNP  &kp SCRNFC &kp SCRNPC
         //  ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤
-        //  │ NONE     │ NONE     │ NONE     │ NONE     │ TRANS    │ NONE     │ NONE     │ TRANS    │ NONE     │ NONE     │ NONE     │ NONE     |
-             &bootloader &none      &none      &none      &trans     &none      &none      &trans     &none      &none      &none      &none
+        //  │ ----     │ ----     │ ----     │ NONE     │ NONE     │ NONE     │ TRANS    │ TRANS    │ TRANS    │ ----     │ ----     │ ----     |
+              &none      &none      &none      &none      &none      &none      &trans     &trans     &trans     &none      &none      &none
         //  ╰──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────╯
             >;
         };
